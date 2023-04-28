@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="elTodo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="494.0" prefWidth="651.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogInF.LogInController">
+   <center>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="315.0" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="318.0" prefWidth="390.0" style="-fx-background-color: white;">
+         <center>
+            <GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="140.0" minWidth="295.0" prefHeight="248.0" prefWidth="504.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="150.0" prefWidth="214.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="91.0" prefWidth="94.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="70.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="156.0" minHeight="70.0" prefHeight="78.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="288.0">
+                     <children>
+                        <Label text="Nombre de Usuario:" textFill="#025477" />
+                        <TextField fx:id="espacioNickName" onKeyPressed="#clickAcept2" prefHeight="26.0" prefWidth="270.0" promptText="NickName" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <Label fx:id="errorNickName" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="110.0" text="No se ha encontrado al usuario" textFill="RED" wrapText="true" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="600.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="Contraseña:" textFill="#025477">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="espacioContrasenya" onKeyPressed="#clickAcept2" prefHeight="26.0" prefWidth="203.0" promptText="LetraNúmeroSímbolo" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Label fx:id="errorContrasenya" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="90.0" prefWidth="344.0" text="cefvefve" textFill="RED" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <bottom>
+            <HBox alignment="BOTTOM_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="101.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_LEFT">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" prefHeight="93.0" prefWidth="10000.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="194.0" text="     ¿No tienes cuenta?" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="botonCrearCuenta" mnemonicParsing="false" onMouseClicked="#clickCrearCuenta" prefHeight="27.0" prefWidth="144.0" styleClass="botonOpcion" text="Crear cuenta" textFill="#f2f2f2" wrapText="true">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/usuarioblanco.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <HBox maxWidth="205.0" minWidth="205.0" prefHeight="81.0" prefWidth="205.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <VBox prefHeight="78.0" prefWidth="210.0">
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="200.0" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="210.0">
+                                 <children>
+                                    <Button fx:id="botonAcept" mnemonicParsing="false" onMouseClicked="#clickAcept" prefHeight="30.0" prefWidth="86.0" styleClass="botonOpcion" text="Aceptar" textFill="WHITE" wrapText="true">
+                                       <graphic>
+                                          <ImageView fitHeight="11.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/accept_white.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+                                       </HBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="botonCancel" mnemonicParsing="false" onMouseClicked="#clickCancel" prefHeight="30.0" prefWidth="84.0" styleClass="botonOpcion" text="Cancelar" textFill="#f2f2f2">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="14.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/cancel_white.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <left>
+            <VBox prefHeight="187.0" prefWidth="49.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="187.0" prefWidth="33.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </center>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: #0658b0;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Iniciar sesión">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="40.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <right>
+      <VBox fx:id="cajaFaro" alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imagenFaro" fitHeight="286.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../PaginaInicial/faro.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>

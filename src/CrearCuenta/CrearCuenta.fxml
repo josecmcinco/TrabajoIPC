@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="715.0" prefWidth="408.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CrearCuenta.CrearCuentaController">
+   <top>
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: #007818;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Crear cuenta">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="40.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="615.0" prefWidth="342.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" prefWidth="375.0" text="Importante: Todos los campos menos el nombre de usuario se pueden editar una vez se haya creado la cuenta" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="7.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane maxHeight="1.7976931348623157E308" prefHeight="1000.0" prefWidth="383.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="82.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="54.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="88.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="58.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="64.0" prefHeight="64.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="376.0">
+                     <children>
+                        <HBox maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="480.0">
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Nombre del usuario:" textFill="#025477" />
+                                    <TextField fx:id="espacioUsuario" prefHeight="26.0" prefWidth="220.0" promptText="LetraNúmeroSímbolo" />
+                                 </children>
+                              </VBox>
+                              <Label fx:id="errorUsuario" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="672.0" text="El usuario introducido no cumple con los requisitos" textAlignment="JUSTIFY" textFill="RED" wrapText="true">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="376.0" text="Use entre 6 y 15 caracteres sin espacios. Guiones y subguiones permitidos" textAlignment="JUSTIFY" wrapText="true">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="54.0" prefWidth="508.0" GridPane.rowIndex="1">
+                     <children>
+                        <HBox maxHeight="1.7976931348623157E308" prefHeight="54.0" prefWidth="473.0">
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Email:" textFill="#025477" />
+                                    <TextField fx:id="espacioCorreo" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="200.0" promptText="tuEmail@dominio.com" />
+                                 </children>
+                              </VBox>
+                              <Label fx:id="errorEmail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="54.0" prefWidth="700.0" text="No se ha introducido un email correcto" textAlignment="JUSTIFY" textFill="RED" wrapText="true">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="88.0" prefWidth="519.0" GridPane.rowIndex="2">
+                     <children>
+                        <HBox prefHeight="41.0" prefWidth="519.0">
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Introduzca una contraseña:" textFill="#025477" />
+                                    <PasswordField fx:id="espacioContrasenya" prefHeight="26.0" prefWidth="220.0" promptText="LetraNúmeroSímbolo" />
+                                 </children>
+                              </VBox>
+                              <Label fx:id="errorContrasenya" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="700.0" text="La contraseña introducida no cumple con los requisitos" textAlignment="JUSTIFY" textFill="RED" wrapText="true">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="1000.0" text="La contraseña ha de tener entre 8 y 20 caractéres, una letra en mayúscula, otra en minúscula y un carácter especial (!@#$%&amp;*()-+=)" textAlignment="JUSTIFY" wrapText="true">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="58.0" prefWidth="377.0" GridPane.rowIndex="3">
+                     <children>
+                        <HBox>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="128.0" text="Confirme la contraseña:" textFill="#025477" />
+                                    <HBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                                       <children>
+                                          <PasswordField fx:id="espacioContrasenya2" prefHeight="26.0" prefWidth="220.0" promptText="LetraNúmeroSímbolo" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Label fx:id="errorContrasenya2" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="176.0" text="Las contraseñas no coinciden" textFill="RED" wrapText="true">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="383.0" GridPane.rowIndex="4">
+                     <children>
+                        <HBox prefHeight="57.0" prefWidth="375.0">
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="128.0" text="Fecha de nacimiento:" textFill="#025477" />
+                                    <HBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                                       <children>
+                                          <DatePicker fx:id="espacioFecha" prefHeight="25.0" prefWidth="200.0" promptText="Aquí aparecerá su elección">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></DatePicker>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Label fx:id="errorFecha" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="436.0" text="Para poder crear una cuenta has de tener más de 16 años" textFill="RED" wrapText="true">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="-10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" prefHeight="10.0" prefWidth="377.0" text="Este campo no acepta escritura con el teclado" textAlignment="JUSTIFY" wrapText="true">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="64.0" prefWidth="377.0" GridPane.rowIndex="5">
+                     <children>
+                        <HBox>
+                           <children>
+                              <VBox prefHeight="154.0" prefWidth="510.0">
+                                 <children>
+                                    <Label text="Avatar:" textFill="#025477" />
+                                    <Button fx:id="botonCambiarAvatar" mnemonicParsing="false" onMouseClicked="#clickCanviarAvatar" styleClass="botonBase" text="Cambiar avatar">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </VBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="510.0" text="En caso de no escoger avatar se le asignará uno por defecto" textAlignment="JUSTIFY" wrapText="true">
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="10.0" top="15.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="408.0">
+         <children>
+            <Button fx:id="botonAcept" mnemonicParsing="false" onMouseClicked="#clickAcept" prefHeight="26.0" prefWidth="106.0" styleClass="botonOpcion" text="Crear usuario" textFill="WHITE" wrapText="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/accept_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="botonCancel" mnemonicParsing="false" onMouseClicked="#clickCancel" prefHeight="26.0" prefWidth="84.0" styleClass="botonOpcion" text="Cancelar" textFill="#f2f2f2">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fx:id="imagenCancelar" fitHeight="14.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/cancel_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

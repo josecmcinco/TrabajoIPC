@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 may. 2022, 0:30:49
+    Author     : JACALMAN
+*/
+/*Estas líneas permiten que se muestre correctamente el error del calendario   #0658b0*/
+.date-picker > .date-picker-display-node {
+    -fx-background-color: null;
+    -fx-highlight-fill: white;   
+}
+.date-picker{-fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-color:#d7d7d7;
+    -fx-border-radius: 4px;
+    
+}
+
+.Title{
+    -fx-font-family: "Bookshelf Symbol 7", "Comic Sans MS",  "Times New Roman", Times, serif;
+    }
+
+.button{
+    
+
+}
+/*Los botones azules de abajo*/
+.botonOpcion{
+    -fx-background-color: #0658b0;
+    -fx-text-fill: #f2f2f2;        
+}
+/*El resto de botones*/
+.botonBase{
+    -fx-background-radius: 7px;
+    -fx-text-fill: black;
+    
+}
+/*Los botones grandes*/
+.botonImportante{
+    -fx-background-color: #0e75f9;
+    -fx-border-color:  #043a55;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-text-fill: #f2f2f2; 
+}
+
+.separator *.line{
+    -fx-border-style: solid;
+    -fx-border-width: 3px;  
+}
+
+.button:hover{
+   -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.buttonbase:hover{
+   -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+} 
+
+/*Vbox de la foto de perfil en la pagina principal y edición*/
+.iconoPagPrinc{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: white;
+    
+}
+
+.menuDesplegable {
+    -fx-border-color: #061a35;
+    -fx-border-width:2px;
+    -fx-border-radius: 4px;
+    -fx-border-radius: 4px;
+ 
+}

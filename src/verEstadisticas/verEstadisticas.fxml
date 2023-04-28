@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="elTodo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="560.0" prefWidth="657.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="verEstadisticas.VerEstadisticasController">
+   <top>
+      <HBox style="-fx-background-color: #500050;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Estadisticas">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="40.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botonSalir" mnemonicParsing="false" onAction="#salirVent" styleClass="botonOpcion" text="Salir" textFill="#f2f2f2" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="428.0" prefWidth="98.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="datePicker" layoutX="93.0" layoutY="405.0" prefHeight="25.0" prefWidth="213.0" promptText="Eesión escogida" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="93.0" AnchorPane.rightAnchor="113.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
+            <Label fx:id="textoAciertos" layoutX="52.0" layoutY="383.0" text="Aciertos:" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="171.2" />
+            <Label fx:id="textoErrores" layoutX="52.0" layoutY="411.0" prefHeight="17.0" prefWidth="141.0" text="Fallos:" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="226.0" />
+            <PieChart fx:id="tarta" layoutX="52.0" layoutY="82.0" prefHeight="207.0" prefWidth="225.0" title="Resultados" AnchorPane.bottomAnchor="139.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="82.0" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="325.0" text="Aquí se muestra el porcentaje de aciertos y errores desde una sesión escogida hasta hoy" wrapText="true" AnchorPane.rightAnchor="5.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </right>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="90.0" prefWidth="275.0" text="Aquí aparecen las fechas de las veces que se ha accedido a la aplicación y se han realizado ejercicios. Haz click en una de ellas para que se vea el número de aciertos y fallos conseguidos en la sesión." textAlignment="JUSTIFY" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="5.0" right="3.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="listaView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="239.0" prefWidth="262.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </ListView>
+            <Label fx:id="aciertoDia" prefHeight="17.0" prefWidth="210.0" text="Aciertos de la sesión seleccionada">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="falloDia" prefHeight="17.0" prefWidth="208.0" text="Fallos de la sesión  seleccionada ">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="544.0" prefWidth="47.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

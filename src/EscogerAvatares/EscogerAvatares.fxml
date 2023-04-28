@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EscogerAvatares.EscogerAvataresController">
+   <center>
+      <FlowPane columnHalignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="414.0" prefWidth="364.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="avatarDefault" fitHeight="145.0" fitWidth="145.0" onMouseClicked="#clickAvatarBase" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../avatars/default.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="avatar1" fitHeight="145.0" fitWidth="145.0" onMouseClicked="#clickAvatar1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../avatars/avatar1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="avatar2" fitHeight="145.0" fitWidth="145.0" onMouseClicked="#clickAvatar2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../avatars/avatar2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="avatar3" fitHeight="145.0" fitWidth="145.0" onMouseClicked="#clickAvatar3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../avatars/avatar3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="avatar4" fitHeight="145.0" fitWidth="145.0" onMouseClicked="#clickAvatar4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../avatars/avatar4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="avatarExtra" fitHeight="145.0" fitWidth="145.0" onMouseClicked="#clickAvatarExtra" pickOnBounds="true">
+                     <image>
+                        <Image url="@simboloSuma.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </center>
+   <top>
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: #007818;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Selección de avatar">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="40.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="323.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="323.0" prefWidth="26.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="180.0">
+               <children>
+                  <Button fx:id="botonSubirFoto" mnemonicParsing="false" onMouseClicked="#clickSubirFoto" prefHeight="25.0" prefWidth="159.0" styleClass="botonOpcion" text="Subir desde sispositivo " textFill="WHITE" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="11.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@simboloCarpeta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="900.0">
+               <children>
+                  <Button fx:id="botonCancel" mnemonicParsing="false" onMouseClicked="#clickCancel" prefHeight="26.0" prefWidth="84.0" styleClass="botonOpcion" text="Cancelar" textFill="#f2f2f2">
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/cancel_white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="botonSeleccionarAvatar" mnemonicParsing="false" onMouseClicked="#clickSeleccionarAvatar" prefHeight="25.0" prefWidth="110.0" styleClass="botonOpcion" text="Escoger avatar" textFill="WHITE" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="11.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/accept_white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
