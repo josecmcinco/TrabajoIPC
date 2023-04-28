@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="elTodo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="392.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaInicial.PaginaInicialController">
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <BorderPane fx:id="zonaBotones" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1000.0" prefWidth="358.0" style="-fx-background-color: white;">
+               <bottom>
+                  <VBox alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" prefHeight="55.0" prefWidth="415.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="botonSalida" mnemonicParsing="false" onAction="#salirApp" styleClass="botonOpcion" text="Salir" textFill="#f2f2f2" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="20.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </bottom>
+               <center>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1000.0" prefWidth="358.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="358.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="625.0" minWidth="311.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="95.0" prefHeight="145.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="1.7976931348623157E308" minHeight="95.0" prefHeight="145.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="89.0" prefWidth="354.0">
+                                 <children>
+                                    <Label fx:id="errorContrasenya1" prefHeight="37.0" prefWidth="153.0" text="¡Empieza a practicar ya!" wrapText="true">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="botonIniciarSesion" maxWidth="625.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="47.0" prefWidth="252.0" styleClass="botonImportante" text="Iniciar sesión" textFill="#f2f2f2" VBox.vgrow="ALWAYS">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="625.0" prefHeight="145.0" prefWidth="311.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label fx:id="errorContrasenya" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="27.0" prefWidth="265.0" text="¿No tienes una cuenta todavía? ¡Créala aquí!" wrapText="true" VBox.vgrow="ALWAYS">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="botonCrearCuenta" maxWidth="625.0" mnemonicParsing="false" onMouseClicked="#clickCrearCuenta" prefHeight="47.0" prefWidth="300.0" styleClass="botonImportante" text="Crear Cuenta" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox fx:id="cajaFaro" alignment="BOTTOM_RIGHT" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="309.0" prefWidth="171.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="imagenFaro" fitHeight="281.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@faro.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <HBox alignment="CENTER" prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: #0658b0;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="gifBrujula" fitHeight="61.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Text fill="#f0f0f0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Navegati" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="40.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <Pane prefHeight="78.0" prefWidth="58.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <left>
+      <VBox fx:id="margenDerecho" prefHeight="240.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

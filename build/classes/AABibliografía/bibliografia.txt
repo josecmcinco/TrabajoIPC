@@ -1,0 +1,16 @@
+https://community.oracle.com/tech/developers/discussion/4117217/scaling-in-javafx
+https://jenkov.com/tutorials/javafx/datepicker.html
+http://acodigo.blogspot.com/2017/08/datepicker-control-javafx-para-manejar.html
+https://www.baeldung.com/java-current-directory
+https://stackoverflow.com/questions/21034258/password-validation-regex-to-disallow-whitespaces
+https://www.programiz.com/javascript/regex
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number
+https://stackoverflow.com/questions/38216268/how-to-listen-resize-event-of-stage-in-javafx
+https://stackoverflow.com/questions/9408244/how-to-set-vbox-size-to-window-size-in-javafx
+https://stackoverflow.com/questions/13880638/how-do-i-pick-up-the-enter-key-being-pressed-in-javafx2
+https://stackoverflow.com/questions/29504568/wrap-content-in-javafx
+https://stackoverflow.com/questions/62513192/javafx-datepicker-disable-future-dates
+https://stackoverflow.com/questions/31426912/how-to-make-window-fullscreen-maximized-in-scene-builder
+//video y ayuda de Piechart
+http://acodigo.blogspot.com/2017/08/piechart-javafx.html
+https://www.youtube.com/watch?v=bpHmrgvpEDQ&list=WL&index=3
